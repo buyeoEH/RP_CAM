@@ -22,7 +22,8 @@
 </head>
 <body>
   <h1>HM01B0 카메라</h1>
-  <img id="cam" src="images/latest.bmp" alt="latest capture">
+  <!-- 변경 -->
+  <img id="cam" src="https://raw.githubusercontent.com/buyeoEH/RP_CAM/main/images/latest.bmp" alt="latest capture">
   <p id="status">마지막으로 저장된 사진입니다. 버튼을 누르면 지금 찍습니다.</p>
   <button id="shootBtn">사진보기 (지금 촬영)</button>
 
@@ -55,7 +56,7 @@
     }
 
     function refreshImage() {
-      img.src = 'images/latest.bmp?t=' + Date.now();
+      img.src = 'https://raw.githubusercontent.com/buyeoEH/RP_CAM/main/images/latest.bmp?t=' + Date.now();
     }
 
     async function requestCapture() {
